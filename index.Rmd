@@ -1,0 +1,48 @@
+---
+title: "My Storyboard at IAS - tabs"
+output: 
+  flexdashboard::flex_dashboard
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard) # always
+```
+
+<!-- links -->
+```{r}
+map1link= "https://github.com/CIENCIA-DE-DATOS-ESPACIALES-1IAS21-05A1/EVALUACION-1/raw/main/map1.rds"
+viz1=url(map1link)
+
+map2link= "https://github.com/CIENCIA-DE-DATOS-ESPACIALES-1IAS21-05A1/EVALUACION-1/raw/main/map2.rds"
+viz2=url(map2link)
+
+map3link= "https://github.com/CIENCIA-DE-DATOS-ESPACIALES-1IAS21-05A1/EVALUACION-1/raw/main/map3.rds"
+viz3=url(map3link)
+```
+
+## Sidebar {.sidebar}
+
+
+Los mapas representa la población de China
+
+## Column {.tabset .tabset-fade}
+
+
+### Dot Density Map (DDM)
+
+```{r fig.width=12, fig.height=9}
+readRDS(viz1)
+```
+
+
+### Proportional Symbol Map (PSM)
+
+```{r fig.width=12, fig.height=9}
+readRDS(viz2)
+```
+
+### Coropleto
+
+```{r fig.width=12, fig.height=9}
+readRDS(viz3)
+```
