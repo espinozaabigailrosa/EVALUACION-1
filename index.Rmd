@@ -23,7 +23,7 @@ viz3=url(map3link)
 ## Sidebar {.sidebar}
 
 
-Los mapas representa la población de China
+Los mapas representan la cantidad de vehículos en America
 
 ## Column {.tabset .tabset-fade}
 
